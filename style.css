@@ -1,0 +1,159 @@
+/* ______GENERAL______ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #c4c4c4;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Quattrocento Sans', sans-serif;
+}
+
+.container {
+    margin: auto;
+    width: 1200px;
+}
+
+.row {
+    padding: 0 -15px;
+    display: flex;
+}
+
+
+[class*=col-md-] {
+    padding: 0 15px;
+}
+
+.col-md-3 {
+    flex: 3;
+}
+
+.col-md-5 {
+    flex: 5;
+}
+
+.col-md-6 {
+    flex: 6;
+}
+
+.col-md-7 {
+    flex: 7;
+}
+
+.col-md-12 {
+    flex: 12;
+}
+
+.bg-dark {
+    background-color: #1d2126;
+}
+
+/* ______BUTTONS______ */
+
+.btn {
+    height: 45px;
+    width: 125px;
+    background-color: rgba(255, 255, 255, .0);
+    border-radius: 6px;
+    border: 2px solid #fff;
+    outline: none;
+    margin-right: 10px;
+    color: #fff;
+}
+
+.btn:hover {
+    background-color: #23b7a4;
+    border-color: #23b7a4;
+}
+
+.btn:active {
+    transform: scale(1.05);
+}
+
+/* ______HEADER______ */
+/* LOGO */
+
+.logo img {
+    padding: 30px 0;
+}
+
+/* MENU */
+
+.menu {
+    list-style: none;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu-li a {
+    display: block;
+    padding: 10px;
+    font-size: 14px;
+    border: 2px solid #fff;
+    border-radius: 6px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu-li a:hover {
+    color: #23b7a4;
+    border-color: #23b7a4;
+}
+
+/* SEARCH */
+
+.search-container {
+    height: 80px;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.search-field {
+    padding: 10px;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 6px;
+    outline-color: #1d2126;
+    background-color: #1d2126;
+    color: #fff;
+}
+
+.search img {
+    position: absolute;
+    right: 5%;
+    top: 20%;
+}
+
+/* Welkome */
+
+.welkome-header {
+    background: url(img/header-bg.png) no-repeat center;
+    border-top: 1px solid rgba(255, 255, 255, .5);
+    border-bottom: 1px solid rgba(255, 255, 255, .5);
+}
+
+.welkome-row {
+    display: flex;
+    height: 660px;
+    align-items: center;
+}
+
+.welkome-h {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 36px;
+    padding: 15px 0;
+}
+
+.welkome-p {
+    color: #fff;
+    font-size: 16px;
+    padding: 15px 0 45px 0;
+}
