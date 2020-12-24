@@ -81,7 +81,8 @@
         padding: 5px;
         font-size: 12px;
     }
-    .search-container {
+    .search-container, .logo {
+        display: flex;
         justify-content: center;
     }
     .search-field {
@@ -89,6 +90,10 @@
     }
     .btn {
         margin-top: 10px;
+    }
+    .search img {
+        right: 28%;
+        top: 20%;
     }
 
 
@@ -117,6 +122,10 @@
     }
     .btn {
         margin-top: 10px;
+    }
+    .search img {
+        right: 20%;
+        top: 20%;
     }
 
 
