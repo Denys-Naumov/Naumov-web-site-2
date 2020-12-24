@@ -1,0 +1,123 @@
+/*  xs -mobile 
+    sm - tablet
+    md - laptop
+    lg - desctop*/
+/* _____________________________laptop___________________________________________ */
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .container {
+        max-width: 1000px;
+    }
+    .col-md-3 {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }   
+    .col-md-5 {
+        flex: 0 0 41.66667%;
+        max-width: 41.66667%;
+    } 
+    .col-md-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    } 
+    .col-md-7 {
+        flex: 0 0 58.33334%;
+        max-width: 58.33334%;
+    } 
+}
+
+/* _____________________________tablet___________________________________________ */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .container {
+        max-width: 760px;
+    }
+    .col-sm-2 {
+        flex: 0 0 16.66667%;
+        max-width: 16.66667%;
+    }  
+    .col-sm-3 {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }   
+    .col-sm-5 {
+        flex: 0 0 41.66667%;
+        max-width: 41.66667%;
+    } 
+    .col-sm-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    } 
+    .col-sm-7 {
+        flex: 0 0 58.33334%;
+        max-width: 58.33334%;
+    } 
+    .col-sm-8 {
+        flex: 0 0 66.66667%;
+        max-width: 66.66667%;
+    }
+    .menu-li a {
+        padding: 5px;
+        font-size: 12px;
+    }
+    .search-field {
+        width: 150px;
+    }
+
+    
+}
+
+/* ______________________________mobile___________________________________________ */
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .container {
+        max-width: 400px;
+    }
+    .col-xs-12 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .menu-li a {
+        padding: 5px;
+        font-size: 12px;
+    }
+    .search-container {
+        justify-content: center;
+    }
+    .search-field {
+        width: 150px;
+    }
+    .btn {
+        margin-top: 10px;
+    }
+
+
+}
+
+
+
+@media (max-width: 480px) {
+    .container {
+        max-width: 300px;
+    }
+    .col-xs-12 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .menu-li a {
+        padding: 5px;
+        font-size: 12px;
+    }
+    .search-container, .logo {
+        display: flex;
+        justify-content: center;
+    }
+    .search-field {
+        width: 150px;
+    }
+    .btn {
+        margin-top: 10px;
+    }
+
+
+}
