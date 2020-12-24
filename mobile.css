@@ -109,6 +109,9 @@
         flex: 0 0 100%;
         max-width: 100%;
     }
+    .menu {
+        flex-wrap: wrap;
+    }
     .menu-li a {
         padding: 5px;
         font-size: 12px;
