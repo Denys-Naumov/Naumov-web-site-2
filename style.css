@@ -7,7 +7,7 @@
 }
 
 body {
-    background: #c4c4c4;
+    background: #fff;
     font-family: 'Open Sans', sans-serif;
     font-family: 'Quattrocento Sans', sans-serif;
 }
@@ -24,6 +24,17 @@ body {
     flex-wrap: wrap;
 }
 
+section {
+    border-bottom: 1px solid #dde1e4;
+}
+
+p {
+    line-height: 2;
+}
+
+.bold {
+    font-weight: bold;
+}
 
 [class*=col-md-] {
     padding: 0 15px;
@@ -79,6 +90,33 @@ body {
 .btn:active {
     transform: scale(1.05);
 }
+
+/* Block */
+
+.block {
+    width: 10px;
+    height: 35px;
+    background-color: #e1e6ea;
+}
+
+/* BOX */
+
+.box {
+    height: 50px;
+    max-width: 50px;
+    min-width: 50px;
+    margin-right: 15px;
+    background-color: #23b7a4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.box-dark {
+    background-color: #3a454d;
+}
+
 
 /* ______HEADER______ */
 /* LOGO */
@@ -174,3 +212,108 @@ header .current {
     font-size: 16px;
     padding: 15px 0 45px 0;
 }
+
+/* Modest */
+.row-title {
+    height: 600px;
+}
+
+.modest-box {
+    display: flex;
+    align-items: center;
+}
+
+.title {
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.social-box p {
+    margin: 15px 0;
+    font-size: 16px;
+}
+
+.social-img {
+    display: flex;
+}
+
+.social {
+    background-color: #e1e6ea;
+    margin: 15px 0;
+}
+
+.dedication-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.modest {
+    display: flex;
+    margin: 15px 0;
+}
+
+/* TEAM */
+
+.team-title {
+    height: 600px;
+}
+
+.team-box{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.box-dark {
+    position: absolute;
+    z-index: 100;
+    display: none;
+}
+
+.box-dark1 {
+    left: 20%;
+    top: 30%
+}
+
+.box-dark2 {
+    left: 40%;
+    top: 30%
+}
+
+.box-dark3 {
+    left: 60%;
+    top: 30%
+}
+
+.team-box:hover img {
+    opacity: .75;
+}
+
+.team-box:hover .box-dark{
+    display: block;
+}
+
+.team-box:hover .name-box {
+    background-color: #1d2126;
+    color: #fff;
+}
+
+.name-box {
+    height: 70px;
+    background-color: #e1e6ea;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.name-box p {
+    margin: 0 0 0 20px;
+    line-height: 1.5;
+}
+
+.divvvvvv {
+    display: none;
+}
+
