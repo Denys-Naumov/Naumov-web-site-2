@@ -193,6 +193,7 @@
     }
     .menu {
         overflow-x: scroll;
+        justify-content: unset;
     }
     .search-field {
         width: 150px;
@@ -252,11 +253,7 @@
         margin-bottom: 20px;
     }
 
-
-
 }
-
-
 
 @media (max-width: 480px) {
     .container {
@@ -279,6 +276,7 @@
     }
     .menu {
         overflow-x: scroll;
+        justify-content: unset;
     }
     .btn {
         margin-top: 10px;
