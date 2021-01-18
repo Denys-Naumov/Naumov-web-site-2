@@ -66,6 +66,7 @@
     .features-img {
         margin-bottom: 20px;
     }
+
 }
 
 /* _____________________________tablet___________________________________________ */
@@ -176,6 +177,20 @@
     .container {
         max-width: 400px;
     }
+    .search-container {
+        height: 100%;
+    }
+    .search {
+        display: none;
+    }
+    .col-lg-3 {
+        flex: 0 1 25%;
+        max-width: 50%;
+    }
+    .col-lg-6 {
+        flex: 0 1 50%;
+        max-width: 15%;
+    }
     .col-xs-12 {
         flex: 0 0 100%;
         max-width: 100%;
@@ -259,6 +274,20 @@
     .container {
         max-width: 300px;
     }
+    .search-container {
+        height: 100%;
+    }
+    .search {
+        display: none;
+    }
+    .col-lg-3 {
+        flex: 0 1 25%;
+        max-width: 50%;
+    }
+    .col-lg-6 {
+        flex: 0 1 50%;
+        max-width: 15%;
+    }
     .col-xs-12 {
         flex: 0 0 100%;
         max-width: 100%;
@@ -322,6 +351,73 @@
         max-width: 300px;
         margin-bottom: 20px;
     }
+}
 
+/* ____________________Hamburger_Menu_______________________ */
 
+@media (max-width: 767px) {
+    .nav-mobile-menu {
+        width: 15px;
+        height: 15px;
+        position: relative;
+    }
+    .nav-mobile-menu span {
+        height: 1px;
+        background-color: #fff;
+        position: absolute;
+        left: 0;
+        right: 0;
+        transition: .25s ease-in-out;
+    }
+    .nav-mobile-menu span:nth-child(1) {
+        top:3px;
+    }
+    .nav-mobile-menu span:nth-child(2) {
+        top:7px;
+    }
+    .nav-mobile-menu span:nth-child(3) {
+        top: 11px;
+    }
+    .hiden-menu {
+        opacity: 0;
+        visibility: hidden;
+    }
+    .navigation {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 280px;
+        max-width: 280px;
+        transition: all 200ms ease-in-out;
+        transform: translateX(150%);
+    }
+    .header-row {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    /* active menu */
+    .active-menu span:nth-child(1) {
+        top:50%;
+        transform: rotate(-45deg);
+        transition: .3s;
+    }
+    .active-menu span:nth-child(2) {
+        top:50%;
+        transition: .3s;
+        transform: rotate(45deg);
+    }
+    .active-menu span:nth-child(3) {
+        display: none;
+    }
+    .navigation.active-menu {
+        flex-direction: column;
+        height: 100%;
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(0);
+        top: 40px;
+        background-color: #1d2126;
+    }
 }
